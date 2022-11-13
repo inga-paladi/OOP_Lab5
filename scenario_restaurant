@@ -1,0 +1,28 @@
+1. Select restaurant
+	1.1. Choose table
+2. call waiter. the program randomly choose one waiter 
+3. get menu
+4. Make order
+5. Check out
+
+
+/* Fiecare waiter va avea un array cu masele pe care le deserveste.
+ *    In caz ca toti waiterii sunt ocupati, utilizatorul va fi anuntat.
+ */
+    
+* In caz ca nu sunt mese disponibile utilizatorul va fi rugat sa aleaga alt restaurant.
+
+*  Cand utilizatorul va alege un produs din menu, iar acesta nu va fi disponibil, va fi rugat sa aleaga altceva.
+
+
+Thread:
+  La fiecare 10 secunde va recalcula situatia in restaurant:
+    - El va alege aleatoriu un numar in intervalul [nrLocuri - nrLocuri * 0.1; nrLocuri + nrLocuri * 0.1]
+        pentru a actualiza numarul de mese ocupate.
+    - Se va alege aleatoriu un produs din menu care isi va schimba starea de disponibilitate.
+    
+OOP Requirements:
+
+Overriding
+Abstraction
+Dependency injection
